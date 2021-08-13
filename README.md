@@ -7,7 +7,7 @@ Case and packaging design files for Amano, an Alice layout keyboard.
 * [Plate With Logo](./Plate%20With%20Logo.step)
 
 ### Wrist Wrest 
-* [Wrist Wrest](./Wrist%20Wrest.step)
+* [Wrist Wrest](./Wrist%20Rest.step)
 ### Packaging 
 * [Foam Insert](./Foam%20Insert.step)
 ## Terms
