@@ -1,15 +1,25 @@
-# Amano 
+# Amano
+[![Discord](https://discord.com/api/guilds/763839131313766420/widget.png)](https://discord.com/invite/KeQSTKK)
+
 Case, wrist rest, and packaging design files for Amano, an Alice layout keyboard. 
-![Case and Wrist Rest](case-image.png?raw=true "Case and Wrist Rest")
+
+![Wireframe screenshot of a Case and Wrist Rest](PNGs/case-image.png)
+
 ## Files  
 ### Keyboard  
-* [Top Case](./Top%20Case.step) 
-* [Bottom Case](./Bottom%20Case.step)
-* [Plate With Logo](./Plate%20With%20Logo.step)
+* [Top Case](STEPs/top-case.step) 
+* [Bottom Case](STEPs/bottom-case.step)
+* [Plate With Logo](STEPs/plate-with-logo.step)
 
 ### Wrist Rest 
-* [Wrist Rest](./Wrist%20Rest.step)
+* [Wrist Rest](STEPs/wrist-rest.step)
+
 ### Packaging 
-* [Foam Insert](./Foam%20Insert.step)
+* [Foam Insert](STEPs/foam-insert.step)
+
 ## Terms
-Please refer to the [LICENSE.md](./LICENSE.md)
+The files within this repository are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+Please refer to the [LICENSE.md](LICENSE.md) for more details
+
+## Images
+![Picture of the Amano keyboard](PNGs/amano.jpg)
