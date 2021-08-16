@@ -1,5 +1,6 @@
 # Amano 
-Case and packaging design files for Amano, an Alice layout keyboard. 
+Case, wrist rest and packaging design files for Amano, an Alice layout keyboard. 
+![Case and Wrist Rest](case-image.png?raw=true "Case and Wrist Rest")
 ## Files  
 ### Keyboard  
 * [Top Case](./Top%20Case.step) 
