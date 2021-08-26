@@ -3,15 +3,17 @@ on:
   watch:
     types: [started]
 
+env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+
 name: CI
 jobs:
   notify-h40io-dev:
     name: Send notification to h40io discord dev channel
     runs-on: ubuntu-latest
+    env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
     steps:
-      - name: 
-        uses: distributhor/workflow-webhook@v2
-        env:
-          webhook_url: ${{ secrets.DISCORD_H40IO_DEV }}
-          webhook_secret: "notsosecret"
-      
+      - name: cURL to discord webhook URL
+        run: |
+          curl -H "Content-type: application/json" -d '{"username": "GithubAction", "content": "$GITHUB_CONTEXT"}' "${{ secrets.DISCORD_H40IO_DEV }}"
