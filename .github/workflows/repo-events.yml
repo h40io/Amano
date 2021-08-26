@@ -4,7 +4,7 @@ on:
     types: [started]
 
 env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
+  GITHUB_CONTEXT: ${{ toJson(github) }}
 
 name: CI
 jobs:
@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: cURL to discord webhook URL
         run: |
-          curl -H "Content-type: application/json" -d '{"username": "GithubAction", "content": "$GITHUB_CONTEXT"}' "${{ secrets.DISCORD_H40IO_DEV }}"
+          curl -H "Content-type: application/json" -d '{"username": "GithubAction", "content": "${{ env.GITHUB_CONTEXT }}"}' "${{ secrets.DISCORD_H40IO_DEV }}"
