@@ -13,4 +13,5 @@ jobs:
         uses: distributhor/workflow-webhook@v2
         env:
           webhook_url: ${{ secrets.DISCORD_H40IO_DEV }}
+          webhook_secret: "notsosecret"
       
