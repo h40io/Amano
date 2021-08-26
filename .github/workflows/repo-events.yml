@@ -1,0 +1,15 @@
+on:
+  fork:
+  watch:
+    types: [started]
+
+name: CI
+jobs:
+  notify-h40io-dev:
+    name: Send notification to h40io discord dev channel
+    steps:
+      - name: 
+        uses: distributhor/workflow-webhook@v2
+        env:
+          webhook_url: ${{ secrets.DISCORD_H40IO_DEV }}
+      
