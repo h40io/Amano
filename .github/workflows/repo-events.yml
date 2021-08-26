@@ -1,0 +1,8 @@
+name: Notification
+  uses: distributhor/workflow-webhook@v2
+  env:
+    webhook_url: ${{ secrets.DISCORD_H40IO_DEV }}
+on:
+  fork:
+  watch:
+    types: [started]
