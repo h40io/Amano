@@ -3,17 +3,12 @@ on:
   watch:
     types: [started]
 
-env:
-  GITHUB_CONTEXT: ${{ toJson(github) }}
-
 name: CI
 jobs:
   notify-h40io-dev:
     name: Send notification to h40io discord dev channel
     runs-on: ubuntu-latest
-    env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
     steps:
       - name: cURL to discord webhook URL
         run: |
-          curl -H "Content-type: application/json" -d '{"username": "GithubAction", "content": "${{ env.GITHUB_CONTEXT }}"}' "${{ secrets.DISCORD_H40IO_DEV }}"
+          curl -H "Content-type: application/json" -d '{"username": "Amano Repository", "content": ":partying_face: Amano repository was starred or forked!"}' "${{ secrets.DISCORD_H40IO_DEV }}"
