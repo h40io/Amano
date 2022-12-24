@@ -5,13 +5,13 @@ Case, wrist rest, and packaging design files for Amano, an Alice layout keyboard
 
 ![Wireframe screenshot of a Case and Wrist Rest](PNGs/case-image.png)
 
-[Browser-supported 3D view of all components](https://a360.co/3sqQVF6)
+[Browser-supported 3D view of all components](https://a360.co/3hWboyR)
 
 ## Files  
 ### Keyboard  
 * [Top Case](STEPs/top-case.step) 
 * [Bottom Case](STEPs/bottom-case.step)
-* [Plate With Logo](STEPs/plate-with-logo.step)
+* [Plate With Logo](DXFs/plate-with-logo.dxf)
 
 ### Wrist Rest 
 * [Wrist Rest](STEPs/wrist-rest.step)
